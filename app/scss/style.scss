@@ -1,0 +1,48 @@
+@import "../../node_modules/node-normalize-scss/_normalize";
+
+@import "variables/variables.scss";
+@import "mixins/mixins.scss";
+
+@import "global/fonts.scss";
+
+@import "blocks/body.scss";
+@import "blocks/main-header";
+@import "blocks/logo";
+
+
+/*
+.burger-button {
+  width: 23px;
+  height: 23px;
+  cursor: pointer;
+  background: #ff5c5c;
+}
+
+@media screen and(max-width: 740px) {
+  .main-menu {
+    transition: background-color 0.6s ease;
+  }
+}
+*/
+.hamburger__checkbox {
+   position: absolute;
+   left: 0;
+   top: 0;
+   width: 1px;
+   height: 1px;
+   opacity: 0;
+   font-size: 0;
+ }
+
+.hamburger__close {
+  display: none;
+}
+
+.hamburger__checkbox:checked ~ .hamburger__close {
+  display: block;
+}
+
+.hamburger__checkbox:checked ~ .hamburger__open {
+  display: none;
+}
+

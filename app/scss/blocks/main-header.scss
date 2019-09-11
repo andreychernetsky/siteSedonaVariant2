@@ -1,0 +1,11 @@
+.main-header {
+  display: flex;
+  position: relative;
+  flex-flow: row wrap;
+  margin:auto;
+  background-color: #ffffff;
+
+  @media #{$tablet-widths} {
+    height: 56px;
+  }
+}
