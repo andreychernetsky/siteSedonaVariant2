@@ -1,15 +1,18 @@
 body {
-  font-family:"PT Sans", "Arial", sans-serif;
-  width: $body-width;
+  font-family:$basic-font-family;
   margin:auto;
   text-align: center;
   background-color: #f1f1f1;
+  box-shadow: 0px 5px 15px 0px rgba(0, 0, 0, 0.2);//добавляет тень
 }
 
-@media #{$tablet-widths} {
+//@media (min-width: $tablet-width) {}
+/*@media #{$tablet-widths} {
   width: 768px
-}
+}*/
+//@media (min-width: $desktop-width) {}
+/*
 @media #{$desktop-widths} {
   width: 1200px;
-  box-shadow: 0px 5px 15px 0px rgba(0, 0, 0, 0.2);
-}
+  box-shadow: 0px 5px 15px 0px rgba(0, 0, 0, 0.2);//добавляет тень
+}*/

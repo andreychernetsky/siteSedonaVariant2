@@ -13,7 +13,7 @@ const gulp = require('gulp'),// Подключаем Gulp
   babel = require('gulp-babel');
 
 gulp.task('scss', ()=> {// Создаем таск Sass
-  return gulp.src('app/scss/**/*.scss')// Берем источник
+  return gulp.src('app/scss/*.scss')// Берем источник
     .pipe(sass({outputStyle: 'compressed'})) //compressed, expanded
     .pipe(autoprefixer(['last 2 versions', 'ie 11'], {cascade: true})) // Создаем префиксы
   /*  .pipe(rename({suffix: '.min'}))// при сжатие добавляет min*/
