@@ -1,11 +1,14 @@
 .main-header {
+  height: 60px;
+  width: 100%;
   display: flex;
   position: relative;
   flex-flow: row wrap;
-  margin:auto;
+  margin: auto;
   background-color: #ffffff;
-
-  @media #{$tablet-widths} {
+}
+  /*@media #{$tablet-widths} {
     height: 56px;
   }
-}
+}*/
+
