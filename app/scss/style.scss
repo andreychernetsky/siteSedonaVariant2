@@ -1,22 +1,18 @@
 @import "../../node_modules/node-normalize-scss/_normalize";
 
-@import "variables.scss";
-@import "mixins.scss";
+@import "variables/variables";
+@import "mixins/mixins";
 
-@import "global/fonts.scss";
+@import "global/fonts";
 
-@import "blocks/body.scss";
+@import "blocks/base";
 @import "blocks/main-header";
 @import "blocks/main-menu";
 @import "blocks/logo";
 @import "blocks/burger-button";
+@import "blocks/mediaQueries";
 
-*{
-  box-sizing: border-box;//Свойства width и height включают в себя значения полей и границ, но не отступов (margin).
-}
-.container {
-  margin:auto;
-  max-width: 1200px;
-}
+
+
 
 

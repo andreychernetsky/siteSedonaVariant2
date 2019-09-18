@@ -1,6 +1,6 @@
 //вариант 1 кодом без svg
 
-.burger-button {
+/*.burger-button {
   z-index: 300;
   width: 40px;
   height: 40px;
@@ -20,10 +20,10 @@
     width: 20px;
     height: 4px;
     background: #81B3D3;
-    /* left: 50%;
+     !*left: 50%;
      top: 50%;
      margin-left: -10px;
-     margin-top: -1px;*/
+     margin-top: -1px;*!
   }
   &__icon-bars::after,
   &__icon-bars::before {
@@ -39,34 +39,29 @@
 
   }
 
-}
+}*/
 
 //вариант через svg
 
-/*.burger-button {
-  z-index: 300;
-  display: none;
-  width: 23px;
-  height: 23px;
+.burger-button {
+  background-color:black;
+  z-index: 500;
+  display:block;
+  width: 43px;
+  height: 43px;
   bottom: 0;
-  background-color: transparent;
-  padding: 0;
+  //background-color: transparent;
   cursor: pointer;
-  background-image: url("../../img/icons/icon-menu.svg");
+  background-image: url("../../img/icons/icon-burger.svg");
   background-repeat: no-repeat;
   background-position: center;
-  position: relative;
-  margin-top: 15px;
-  right: 0;
-  order: 3;
-}*/
+  padding: 10px;
+  border:none;
+  outline: none;
+}
 
 
-@media(max-width: 740px) {
-  .main-menu {
-    display: none;
-    transition: background-color 0.6s ease;
-  }
+@include responsiv{
   .burger-button {
     display: block;
   }

@@ -8,8 +8,25 @@
 </head>
 <body>
 
+<nav class="main-menu main-menu--no-js">
+	<ul class="main-menu__list">
+		<li class="main-menu__item">
+			<span class="main-menu__cross-button"></span>
+			<a class="main-menu__link main-menu__link--active" href="#">Главная</a>
+		</li>
+		<li class="main-menu__item">
+			<a class="main-menu__link" href="./photo.html">Фото и видео</a>
+		</li>
+		<li class="main-menu__item  main-menu__item--third">
+			<a class="main-menu__link" href="./form.html" >Форма отзыва</a>
+		</li>
+		<li class="main-menu__item">
+			<a  class="main-menu__link" href="#">github</a>
+		</li>
+	</ul>
+</nav>
 <header class="main-header container">
-		<a class="logo">
+	<a class="logo">
 			<picture>
 				<source media="(min-width:1200px)" srcset="img/logo/logo-sedona-desktop.svg">
 				<source media="(min-width:768px)" srcset="img/logo/logo-sedona-tablet.svg">
@@ -18,36 +35,20 @@
 			</picture>
 		</a>
 		
-		<!--<button class="burger-button"></button>-->
-		<!--вариант 0-->
+		<button class="burger-button"></button>
+	
 		
 		<!--вариант1-->
-		<div class="burger-button" id="btn">
+	<!--	<div class="burger-button" id="btn">
 			<span class="burger-button__icon-bars"></span>
-		</div>
+		</div>-->
 		<!--вариант2-->
 		<!--	<label class="hamburger">
 				<input class="hamburger__checkbox" type="checkbox" />
 				<div class="hamburger__open">open</div>
 				<div class="hamburger__close">close</div>
 			</label>-->
-		<nav class="main-menu ain-menu--no-js" id="navMenu">
-			<ul class="main-menu__list">
-				<li class="main-menu__item">
-					<span class="main-menu__cross-button"></span>
-					<a class="main-menu__link main-menu__link--active" href="#">Главная</a>
-				</li>
-				<li class="main-menu__item">
-					<a class="main-menu__link" href="./photo.html">Фото и видео</a>
-				</li>
-				<li class="main-menu__item  main-menu__item--third">
-					<a class="main-menu__link" href="./form.html" >Форма отзыва</a>
-				</li>
-				<li class="main-menu__item">
-					<a  class="main-menu__link" href="#">github</a>
-				</li>
-			</ul>
-		</nav>	
+		
 </header>
 <main class="container">
 	<section class="info-section">
