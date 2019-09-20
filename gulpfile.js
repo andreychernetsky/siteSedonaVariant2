@@ -56,7 +56,7 @@ gulp.task('html',()=> {
 });
 
 gulp.task('css-libs', ()=> {
-  return gulp.src('app/scss/libs.scss') // Выбираем файл для минификации
+  return gulp.src('app/scss/libs/libs.scss') // Выбираем файл для минификации
     .pipe(sass()) // Преобразуем Sass в CSS посредством gulp-sass
     .pipe(cssnano()) // Сжимаем
     .pipe(rename({suffix: '.min'})) // Добавляем суффикс .min
