@@ -44,9 +44,9 @@
 //вариант через svg
 
 .burger-button {
+  display:none;
   background-color:black;
   z-index: 500;
-  display:block;
   width: 43px;
   height: 43px;
   bottom: 0;
@@ -61,7 +61,7 @@
 }
 
 
-@include responsiv{
+@include responsive(phone){
   .burger-button {
     display: block;
   }

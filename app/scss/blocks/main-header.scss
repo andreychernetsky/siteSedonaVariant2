@@ -9,7 +9,7 @@
   align-items: center;
   position: relative;
   padding: 0 10px;
-  @include responsive(){
+  @include responsive(phone){
     height: 56px;
   }
 }
