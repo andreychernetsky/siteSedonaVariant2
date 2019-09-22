@@ -3,8 +3,10 @@
 @import "variables/variables";
 @import "blocks/media-queries";
 @import "mixins/mixins";
+@import "mixins/html-grid";
 @import "libs/libs";
 @import "global/fonts";
+@import "blocks/row";
 @import "blocks/base";
 @import "blocks/main-header";
 @import "blocks/main-menu";
