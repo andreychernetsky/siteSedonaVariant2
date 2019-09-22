@@ -2,13 +2,18 @@
   height: 60px;
   width: 100%;
   display: flex;
-  position: relative;
   flex-flow: row wrap;
+  justify-content: flex-end;
   margin: auto;
   background-color: #ffffff;
-}
-  /*@media #{$tablet-widths} {
+  align-items: center;
+  position: relative;
+  padding: 0 10px;
+  @include responsive(phone){
     height: 56px;
   }
-}*/
+}
+
+
+
 

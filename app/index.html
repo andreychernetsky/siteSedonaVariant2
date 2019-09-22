@@ -8,8 +8,46 @@
 </head>
 <body>
 
+<style>
+	.card__item {
+		padding-top: 36px;
+		padding-bottom: 36px;
+	}
+</style>
+<div class="card">
+	<div class="row">
+		<div class="col-4 col-12-small card__item">
+			New column 1
+		</div>
+		<div class="col-4 col-12-small card__item">
+			New column 2
+		</div>
+		<div class="col-4 col-12-small card__item">
+			New column 3
+		</div>
+	</div>
+</div>
+
+<nav class="main-menu main-menu--no-js">
+	<ul class="main-menu__list">
+		<li class="main-menu__item">
+			<span class="main-menu__cross-button"></span>
+			<a class="main-menu__link main-menu__link--active" href="#">Главная</a>
+		</li>
+		<li class="main-menu__item">
+			<a class="main-menu__link" href="./photo.html">Фото и видео</a>
+		</li>
+		<li class="main-menu__item  main-menu__item--third">
+			<a class="main-menu__link" href="./form.html" >Форма отзыва</a>
+		</li>
+		<li class="main-menu__item">
+			<a  class="main-menu__link" href="#">github</a>
+		</li>
+	</ul>
+</nav>
+
 <header class="main-header container">
-		<a class="logo">
+	<a class="logo">
 			<picture>
 				<source media="(min-width:1200px)" srcset="img/logo/logo-sedona-desktop.svg">
 				<source media="(min-width:768px)" srcset="img/logo/logo-sedona-tablet.svg">
@@ -19,7 +57,7 @@
 		</a>
 		
 		<!--<button class="burger-button"></button>-->
-		<!--вариант 0-->
+	
 		
 		<!--вариант1-->
 		<div class="burger-button" id="btn">
@@ -31,23 +69,7 @@
 				<div class="hamburger__open">open</div>
 				<div class="hamburger__close">close</div>
 			</label>-->
-		<nav class="main-menu ain-menu--no-js" id="navMenu">
-			<ul class="main-menu__list">
-				<li class="main-menu__item">
-					<span class="main-menu__cross-button"></span>
-					<a class="main-menu__link main-menu__link--active" href="#">Главная</a>
-				</li>
-				<li class="main-menu__item">
-					<a class="main-menu__link" href="./photo.html">Фото и видео</a>
-				</li>
-				<li class="main-menu__item  main-menu__item--third">
-					<a class="main-menu__link" href="./form.html" >Форма отзыва</a>
-				</li>
-				<li class="main-menu__item">
-					<a  class="main-menu__link" href="#">github</a>
-				</li>
-			</ul>
-		</nav>	
+		
 </header>
 <main class="container">
 	<section class="info-section">
