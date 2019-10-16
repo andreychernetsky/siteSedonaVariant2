@@ -1,6 +1,6 @@
-//вариант 1 кодом без svg
 
 .burger-button {
+  position: absolute;
   z-index: 300;
   width: 40px;
   height: 40px;
@@ -8,7 +8,6 @@
   cursor: pointer;
   background-color: transparent;
   padding: 0;
-  position: relative;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -20,10 +19,10 @@
     width: 20px;
     height: 4px;
     background: #81B3D3;
-     //!*left: 50%;
-     //top: 50%;
-     //margin-left: -10px;
-     //margin-top: -1px;*!
+    /* left: 50%;
+     top: 50%;
+     margin-left: -10px;
+     margin-top: -1px;*/
   }
   &__icon-bars::after,
   &__icon-bars::before {
@@ -41,53 +40,8 @@
 
 }
 
-//вариант через svg
-
-//.burger-button {
-//  display:none;
-//  background-color:black;
-//  z-index: 500;
-//  width: 43px;
-//  height: 43px;
-//  bottom: 0;
-//  //background-color: transparent;
-//  cursor: pointer;
-//  background-image: url("../../img/icons/icon-burger.svg");
-//  background-repeat: no-repeat;
-//  background-position: center;
-//  padding: 10px;
-//  border:none;
-//  outline: none;
-//}
-
-
-@include responsive(phone){
+@media #{$tablet-widths} {
   .burger-button {
-    display: block;
+    display: none;
   }
 }
-
-//вариант2
-/*
-.hamburger__checkbox {
-  position: absolute;
-  left: 0;
-  top: 0;
-  width: 1px;
-  height: 1px;
-  opacity: 0;
-  font-size: 0;
-}
-
-.hamburger__close {
-  display: none;
-}
-
-.hamburger__checkbox:checked ~ .hamburger__close {
-  display: block;
-}
-
-.hamburger__checkbox:checked ~ .hamburger__open {
-  display: none;
-}
-*/

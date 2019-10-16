@@ -1,16 +1,13 @@
 .main-header {
-  height: 60px;
-  width: 100%;
+  width:100%;
   display: flex;
-  flex-flow: row wrap;
-  justify-content: flex-end;
-  margin: auto;
-  background-color: #ffffff;
-  align-items: center;
   position: relative;
-  padding: 0 10px;
-  @include responsive(phone){
+  flex-wrap: wrap;
+  margin: 0 auto;
+  background-color: #ffffff;
+  @media #{$tablet-widths} {
     height: 56px;
+    width: 100%;
   }
 }
 
