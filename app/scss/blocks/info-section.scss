@@ -142,35 +142,23 @@
     width: 1200px;
     height: 518px;
     background-image: url("../img/back/bg-back-desktop@1x.jpg");
-
     &::after {
       background-image: url("../img/intro/bg-intro-triangle-desktop.svg");
     }
 
-    &--shorter {
-      height: 301px;
-    }
+
   }
   &__index-text {
     margin-top: 78px;
 
-    &--shorter {
-      width: 461px;
-      margin-top: 104px;
-    }
+
   }
   &__reasons {
     margin-top: 30px;
   }
-  &__promo {
-    margin-top: 111px;
-  }
+
   &__text {
     margin-bottom: 60px;
 
-    &--photo-low {
-      //фото и видео margin
-      margin-bottom: 70px;
-    }
   }
 }
