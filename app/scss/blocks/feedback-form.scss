@@ -1,0 +1,114 @@
+:root {
+  --main-bg-color: #81b3b2;
+  --disabled: #e5e5e5;
+  --radio-custom-active:#d5d5d5;
+}
+
+.feedback-form {
+  line-height: 26px;
+  padding-bottom: 36px;
+  text-align: left;
+  &__contact-info {
+    position: relative;
+    border: 0;
+    padding-top: 0;
+    outline: 1px solid black;
+    margin: 0;
+    @include container();
+    &::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: $body-width;
+      height: 1px;
+      background-color: var(--disabled);
+    }
+    &--contact {
+      padding-bottom: 27px;
+    }
+    &--impression {
+      padding-bottom: 17px;
+    }
+    &--sight {
+      padding-bottom: 21px;
+    }
+    &--review {
+      padding-bottom: 44px;
+    }
+  }
+  &__title {
+    font-size: 18px;
+    font-weight: 700;
+    color:var(--back);
+    text-transform: uppercase;
+    padding-top: 20px;
+    text-align: center;
+    margin: auto;
+    &--impression {
+      padding-bottom: 20px;
+    }
+    &--contacts {
+      margin-bottom: 10px;
+    }
+  }
+  &__field-label {
+    display: inline-flex;
+    font-size: 14px;
+    font-weight:400;
+    color: var(--black);
+    align-items: center;
+    text-transform: uppercase;
+    margin-top: 20px;
+    &--padding {
+      padding: 10px 0 7px 22px;
+    }
+    &--radio,
+    &--checkbox {
+      font-size: 18px;
+      font-weight: 700;
+      line-height: 26px;
+      text-transform: none;
+    }
+    &--radio {
+      margin: 0 11px;
+    }
+    &--checkbox {
+      margin-top: 17px;
+    }
+    &--devils-bridge {
+      oder:1;
+    }
+    &--slide-park {
+      order: 2;
+    }
+    &--mount-bell {
+      order:3;
+    }
+    &--red-rocks {
+      order:4;
+    }
+  }
+  &__sight-container {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  &__selector {
+    display: none;
+  }
+  &__radio-custom {
+    display: block;
+    position: relative;
+    width: 58px;
+    height: 58px;
+    background-color: var(--main-bg-color);
+    border:1px solid var(--form-input-bg-color);
+    &:hover {
+      background-color: var(--disabled);
+      border: 1px solid var(--disabled);
+    }
+    &:active {
+      background-color:var(--radio-custom-active);
+    }
+  }
+}
