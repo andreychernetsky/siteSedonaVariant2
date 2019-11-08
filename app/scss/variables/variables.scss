@@ -1,7 +1,23 @@
-$body-width: 320px;
 
 $basic-font-family: "PT Sans", "Arial", sans-serif;
-$phone-widths:"(min-width:320px)";
-$tablet-widths: "(min-width: 768px)";
-$desktop-widths: "(min-width: 1200px)";
 
+//color css
+//образцы названия переменных
+//—-brand-color
+//—-gutter
+//--color-blue
+//--body-background
+//--main-background
+
+:root{
+  --middle-background:#f2f2f2;
+  --main-background:#fff;
+  --color-text:#7d7d7d;
+  --color-icon:#c0d9e8;
+  --bloks-background:#eeeeee;
+  --black:#000;
+}
+
+//size
+$body-width:320px;
+$max-width:1200px;

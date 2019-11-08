@@ -1,0 +1,19 @@
+.feature {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-items: center;
+  outline: 1px solid black;
+  margin: 3px;
+  &__fact {
+    width:400px;
+   @include  border;
+    height: 255px;
+  }
+  &__image {
+    width:800px;
+    height: 255px;
+    @include  border;
+  }
+}

@@ -1,0 +1,9 @@
+.wrapper{
+  width:$max-width;
+  margin:auto;
+  background-color:var(--main-background);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  @include  border;
+}
