@@ -1,6 +1,8 @@
 
 $basic-font-family: "PT Sans", "Arial", sans-serif;
-
+$main-bg-color: #81b3d2;
+$form-input-bg-color: #f2f2f2;
+$menu-bottom-border-color: #678fa8;
 //color css
 //образцы названия переменных
 //—-brand-color
@@ -10,14 +12,47 @@ $basic-font-family: "PT Sans", "Arial", sans-serif;
 //--main-background
 
 :root{
-  --middle-background:#f2f2f2;
-  --main-background:#fff;
-  --color-text:#7d7d7d;
+
+  //вариант1
+ /* --main-color:#fff;
+  --brand-color:#81b3d2;
+  --color-text:#000;
+  --text:#7d7d7d;
+  --bg-body:#f2f2f2;
+
+  --bg-tem-menu:var(--brand-color);
+  --link-hover:var(--brand-color);
+  --color-link:var(--main-color);
+  --bg-item:var(--main-color);
+
+
+
+  --link-active:#766357;
+
   --color-icon:#c0d9e8;
   --bloks-background:#eeeeee;
+
+  //----------------------------------------
+*/
+
+  //вариант 2
+  --gray-1:#f2f2f2;
+  --light-gray-2:#e5e5e5;
+  --light-gray-3:#d5d5d5;
+  --white:#fff;
   --black:#000;
+  --light-blue:#81b3b2;
+  --dark-grey:#333;
+
 }
 
 //size
-$body-width:320px;
-$max-width:1200px;
+$sm:320px;
+$md: 768px;
+$lg:992px;
+$xl:1200px;
+
+//первый варинт медиа запросов
+//$sm:"(min-width:320px)";
+//$md: "(min-width: 768px)";
+//$xl: "(min-width: 1200px)";

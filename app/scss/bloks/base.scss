@@ -1,8 +1,8 @@
 
 html, body {
-  min-width: $body-width;
+  min-width:$sm;
   font-family: $basic-font-family;
-  background-color: var(--middle-background);
+  background-color: var(--bg-body);
   font-size: 100%;
 }
 *,
