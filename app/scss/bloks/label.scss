@@ -1,10 +1,11 @@
 .label {
-  width: 100%;
-  display:inline-flex;
-  align-items: center;
+  width: 95%;
+  margin: auto;
+  display: flex;
+  flex-direction: row;
+  padding-left: 20%;
 
   &__checkbox-custom {
-
     display: block;
     position: relative;
     width: 58px;

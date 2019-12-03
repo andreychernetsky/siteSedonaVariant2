@@ -1,5 +1,4 @@
 .logo {
-  position: relative;
   margin-bottom: -30px;
   left: 110px;
   order: 2;
@@ -15,8 +14,6 @@
 
 @include responsive($lg){
   .logo {
-    width: 188px;
-    height: 96px;
     &__picture {
       width: auto;
       height: auto;

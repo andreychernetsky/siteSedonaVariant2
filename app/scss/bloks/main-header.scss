@@ -1,22 +1,23 @@
 .main-header {
+  max-width: 100%;
   display: flex;
-  position: relative;
   flex-wrap: wrap;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
   background-color:var(--white);
 
+
   &__menu-button {
-    position: relative;
-    margin-top: 15px;
-    margin-bottom: 15px;
-    margin-left: auto;
-    margin-right: 20px;
+    position:absolute;
+    top: 4px;
+    left: 113px;
     order: 3;
   }
 }
-
-
 @include responsive($md){
   .main-header{
+    width: 100%;
     height: 56px;
   }
   .burger-button {
